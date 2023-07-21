@@ -1,0 +1,32 @@
+﻿@model Casgem_Portfolio.Models.Entities.TblMessage
+@{
+    ViewBag.Title = "MessageDetails";
+    Layout = "~/Views/Shared/_PortfolioAdminLayout.cshtml";
+}
+<!--1 TANE VERİ OLDUGU İCİN LİST YAZILMAYABİLİR -->
+
+<h2>Mesaj Detayları </h2>
+<table class="table table-bordered">
+    <tr>
+        <th>Konu</th>
+        <th>Gönderen</th>
+        <th>Mail Adresi</th>
+        <th>Mesaj</th>
+    </tr>
+    <tr>
+        <td>
+            @Html.DisplayFor(x => x.MessageSubject)
+        </td>
+        <td>
+            @Html.DisplayFor(x => x.NameSurname)
+        </td>
+        <td>
+            @Html.DisplayFor(x => x.SenderMail)
+        </td> 
+        <td>
+            @Html.DisplayFor(x => x.Content)
+        </td>
+    </tr>
+</table>
+
+
